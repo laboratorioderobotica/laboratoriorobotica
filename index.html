@@ -1,1 +1,291 @@
-<Hola>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio de Robótica | Conoce a Cubito</title>
+  
+  <!-- Bulma CSS desde CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  
+  <!-- FontAwesome (para íconos de WhatsApp, Instagram, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts (Poppins para tipografía moderna) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Personalización de la paleta de colores según Cubito */
+    :root {
+      --brand-blue: #0A4384;      /* Azul principal */
+      --brand-orange: #FF681E;    /* Naranja vibrante */
+      --brand-sky: #6CB3E4;       /* Celeste Cubito */
+      --brand-light-sky: #EAF4FC; /* Celeste muy suave para fondos */
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8fafc;
+      color: #2b2b2b;
+    }
+
+    /* Modificadores de colores Bulma */
+    .bg-brand-blue { background-color: var(--brand-blue) !important; }
+    .bg-brand-sky { background-color: var(--brand-sky) !important; }
+    .bg-brand-light { background-color: var(--brand-light-sky) !important; }
+    .text-brand-orange { color: var(--brand-orange) !important; }
+    .text-brand-blue { color: var(--brand-blue) !important; }
+
+    .btn-orange {
+      background-color: var(--brand-orange);
+      color: #ffffff;
+      font-weight: 700;
+      border: none;
+      transition: transform 0.2s ease, background-color 0.2s;
+    }
+    .btn-orange:hover {
+      background-color: #e05512;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .btn-sky {
+      background-color: var(--brand-sky);
+      color: #ffffff;
+      font-weight: 700;
+      border: none;
+    }
+    .btn-sky:hover {
+      background-color: #559ecf;
+      color: #ffffff;
+    }
+
+    /* Navbar */
+    .navbar {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .navbar-item img {
+      max-height: 2.8rem;
+    }
+
+    /* Tarjetas redondeadas y modernas */
+    .custom-card {
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(10, 67, 132, 0.08);
+      border: 2px solid #eef3f8;
+      transition: transform 0.3s ease;
+    }
+    .custom-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Imagen de Cubito estilizada */
+    .hero-img-container img {
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(255, 104, 30, 0.2);
+      border: 4px solid #ffffff;
+    }
+
+    /* Botón Flotante de WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 32px;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      color: #FFF;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR / ENCABEZADO -->
+  <nav class="navbar is-white is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <!-- Reemplaza 'logo.png' por el archivo de tu logo -->
+          <img src="logo.png" alt="Laboratorio de Robótica Logo">
+          <strong class="ml-2 is-size-5 text-brand-blue">Laboratorio de Robótica</strong>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#inicio">Inicio</a>
+          <a class="navbar-item" href="#cubito">Conoce a Cubito</a>
+          <a class="navbar-item" href="#contacto">Contacto</a>
+          
+          <div class="navbar-item">
+            <div class="buttons">
+              <!-- Enlace a Instagram -->
+              <a href="https://instagram.com/tu_usuario" target="_blank" class="button is-danger is-outlined is-rounded">
+                <span class="icon"><i class="fab fa-instagram"></i></span>
+                <span>Instagram</span>
+              </a>
+              <!-- Enlace a WhatsApp -->
+              <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20más%20información%20sobre%20el%20Laboratorio%20de%20Robótica" target="_blank" class="button btn-orange is-rounded">
+                <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                <span>Escríbenos</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION / SECCIÓN PRINCIPAL -->
+  <section class="hero is-medium bg-brand-light mt-6" id="inicio">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          
+          <!-- Texto de Bienvenida -->
+          <div class="column is-6">
+            <span class="tag is-info is-light is-medium is-rounded mb-3">
+              <i class="fas fa-microchip mr-2"></i> ¡Aprende Robótica Jugando!
+            </span>
+            <h1 class="title is-1 text-brand-blue is-size-2-mobile">
+              Descubre el futuro con el <span class="text-brand-orange">Laboratorio de Robótica</span>
+            </h1>
+            <p class="subtitle is-5 mt-3 has-text-grey">
+              Aprende programación, electrónica y diseño tecnológico junto a <strong>Cubito</strong>, nuestro robot soldador y explorador.
+            </p>
+            <div class="buttons mt-5">
+              <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20inscribirme" target="_blank" class="button is-large btn-orange is-rounded">
+                <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                <span>Unirme por WhatsApp</span>
+              </a>
+              <a href="https://instagram.com/tu_usuario" target="_blank" class="button is-large btn-sky is-rounded">
+                <span class="icon"><i class="fab fa-instagram"></i></span>
+                <span>Ver en Instagram</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Imagen del Personaje / Logo -->
+          <div class="column is-6 has-text-centered hero-img-container">
+            <!-- Reemplaza 'cubito.jpg' por la imagen de Cubito soldando -->
+            <img src="cubito.jpg" alt="Cubito Soldando" style="max-width: 85%; height: auto;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SOBRE CUBITO -->
+  <section class="section" id="cubito">
+    <div class="container">
+      <div class="has-text-centered mb-6">
+        <h2 class="title is-2 text-brand-blue">¿Quién es Cubito?</h2>
+        <p class="subtitle is-5 has-text-grey">El amigo robot que te guiara en cada experimento</p>
+      </div>
+
+      <div class="columns is-vcentered">
+        <div class="column is-5 has-text-centered">
+          <!-- Reemplaza 'logo.png' por la imagen del logo con la bombilla -->
+          <img src="logo.png" alt="Logo Cubito" style="max-width: 280px;">
+        </div>
+        <div class="column is-7">
+          <div class="content is-medium">
+            <p>
+              <strong>Cubito</strong> es la mente pensante del laboratorio. Le encanta soldar circuitos, conectar cables y encender grandes ideas (¡como la bombilla de su pecho!).
+            </p>
+            <div class="columns is-multiline mt-4">
+              <div class="column is-6">
+                <div class="box custom-card">
+                  <span class="icon is-large text-brand-orange"><i class="fas fa-bolt fa-2x"></i></span>
+                  <h4 class="title is-5 text-brand-blue mt-2">Electrónica Fácil</h4>
+                  <p class="is-size-7">Aprende a conectar componentes reales desde cero.</p>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="box custom-card">
+                  <span class="icon is-large text-brand-blue"><i class="fas fa-code fa-2x"></i></span>
+                  <h4 class="title is-5 text-brand-blue mt-2">Programación</h4>
+                  <p class="is-size-7">Dale vida a tus creaciones con código muy sencillo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION / BANNER DE CONTACTO -->
+  <section class="section bg-brand-blue has-text-white" id="contacto">
+    <div class="container has-text-centered">
+      <h2 class="title is-2 has-text-white">¿Listo para comenzar a crear?</h2>
+      <p class="subtitle is-4 has-text-light">Contáctanos directamente por WhatsApp o síguenos en Instagram para ver nuestras novedades.</p>
+      
+      <div class="buttons is-centered mt-5">
+        <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20saber%20más" target="_blank" class="button is-medium btn-orange is-rounded">
+          <span class="icon"><i class="fab fa-whatsapp"></i></span>
+          <span>Enviar WhatsApp</span>
+        </a>
+        <a href="https://instagram.com/tu_usuario" target="_blank" class="button is-medium is-light is-outlined is-rounded">
+          <span class="icon"><i class="fab fa-instagram"></i></span>
+          <span>Ir a Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-brand-blue text-white py-5">
+    <div class="content has-text-centered has-text-white">
+      <p>
+        <strong class="has-text-white">Laboratorio de Robótica</strong> &copy; 2026 — Potenciado por Cubito 🤖
+      </p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/1234567890?text=Hola!%20Quiero%20más%20información" class="whatsapp-float" target="_blank" title="Chatea con nosotros">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Script de Bulma para desplegar el menú móvil burger -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
