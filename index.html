@@ -8,10 +8,10 @@
   <!-- Bulma CSS desde CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   
-  <!-- FontAwesome (para íconos de WhatsApp, Instagram, etc.) -->
+  <!-- FontAwesome (para íconos) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Google Fonts (Poppins para tipografía moderna) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -25,7 +25,6 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="#">
-          <!-- Reemplaza 'logo.png' por el archivo de tu logo -->
           <img src="logo.png" alt="Laboratorio de Robótica Logo">
           <strong class="ml-2 is-size-5 text-brand-blue">Laboratorio de Robótica</strong>
         </a>
@@ -41,6 +40,8 @@
         <div class="navbar-end">
           <a class="navbar-item" href="#inicio">Inicio</a>
           <a class="navbar-item" href="#cubito">Conoce a Cubito</a>
+          <a class="navbar-item" href="#sedes">Sedes y Horarios</a>
+          <a class="navbar-item" href="#prensa">Entrevistas</a>
           <a class="navbar-item" href="#contacto">Contacto</a>
           
           <div class="navbar-item">
@@ -98,7 +99,6 @@
 
           <!-- Imagen del Personaje / Logo -->
           <div class="column is-6 has-text-centered hero-img-container">
-            <!-- Reemplaza 'cubito.jpg' por la imagen de Cubito soldando -->
             <img src="cubito.png" alt="Cubito trabajando" style="max-width: 85%; height: auto;">
           </div>
 
@@ -112,12 +112,11 @@
     <div class="container">
       <div class="has-text-centered mb-6">
         <h2 class="title is-2 text-brand-blue">¿Quién es Cubito?</h2>
-        <p class="subtitle is-5 has-text-grey">El amigo robot que te guiara en cada experimento</p>
+        <p class="subtitle is-5 has-text-grey">El amigo robot que te guiará en cada experimento</p>
       </div>
 
       <div class="columns is-vcentered">
         <div class="column is-5 has-text-centered">
-          <!-- Reemplaza 'logo.png' por la imagen del logo con la bombilla -->
           <img src="logo.png" alt="Logo Cubito" style="max-width: 280px;">
         </div>
         <div class="column is-7">
@@ -148,13 +147,179 @@
     </div>
   </section>
 
+  <!-- SECCIÓN SEDES Y HORARIOS -->
+  <section class="section bg-brand-light" id="sedes">
+    <div class="container">
+      <div class="has-text-centered mb-6">
+        <h2 class="title is-2 text-brand-blue">Nuestras Sedes y Horarios</h2>
+        <p class="subtitle is-5 has-text-grey">Haz clic en cualquier ubicación para abrir Google Maps</p>
+      </div>
+
+      <div class="columns is-multiline">
+        <!-- LUNES -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="tag is-warning is-light is-medium mb-2"><strong>LUNES</strong></span>
+            <h4 class="title is-5 text-brand-blue">Valle de Anisacate</h4>
+            <p class="is-size-6 mb-3"><i class="far fa-clock text-brand-orange mr-1"></i> 18:30 a 20:30 hs</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Valle+de+Anisacate+Cordoba" target="_blank" class="button btn-sky is-small is-rounded">
+              <span class="icon"><i class="fas fa-location-dot"></i></span>
+              <span>Abrir en Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- MARTES -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="tag is-warning is-light is-medium mb-2"><strong>MARTES</strong></span>
+            <h4 class="title is-5 text-brand-blue">Santa Rosa</h4>
+            <p class="is-size-6 mb-3"><i class="far fa-clock text-brand-orange mr-1"></i> 19:30 a 20:30 hs</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Santa+Rosa+de+Calamuchita+Cordoba" target="_blank" class="button btn-sky is-small is-rounded">
+              <span class="icon"><i class="fas fa-location-dot"></i></span>
+              <span>Abrir en Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- MIÉRCOLES -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="tag is-warning is-light is-medium mb-2"><strong>MIÉRCOLES</strong></span>
+            <h4 class="title is-5 text-brand-blue">Villa General Belgrano</h4>
+            <p class="is-size-6 mb-3"><i class="far fa-clock text-brand-orange mr-1"></i> 18:30 a 20:30 hs</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Villa+General+Belgrano+Cordoba" target="_blank" class="button btn-sky is-small is-rounded">
+              <span class="icon"><i class="fas fa-location-dot"></i></span>
+              <span>Abrir en Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- JUEVES 1 -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="tag is-warning is-light is-medium mb-2"><strong>JUEVES</strong></span>
+            <h4 class="title is-5 text-brand-blue">Villa Berna</h4>
+            <p class="is-size-6 mb-3"><i class="far fa-clock text-brand-orange mr-1"></i> 15:30 a 16:30 hs</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Villa+Berna+Cordoba" target="_blank" class="button btn-sky is-small is-rounded">
+              <span class="icon"><i class="fas fa-location-dot"></i></span>
+              <span>Abrir en Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- JUEVES 2 -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="tag is-warning is-light is-medium mb-2"><strong>JUEVES</strong></span>
+            <h4 class="title is-5 text-brand-blue">Embalse</h4>
+            <p class="is-size-6 mb-3"><i class="far fa-clock text-brand-orange mr-1"></i> 18:30 a 19:30 hs</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Embalse+Cordoba" target="_blank" class="button btn-sky is-small is-rounded">
+              <span class="icon"><i class="fas fa-location-dot"></i></span>
+              <span>Abrir en Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- VIERNES -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="tag is-warning is-light is-medium mb-2"><strong>VIERNES</strong></span>
+            <h4 class="title is-5 text-brand-blue">Anisacate</h4>
+            <p class="is-size-6 mb-3"><i class="far fa-clock text-brand-orange mr-1"></i> 18:30 a 20:30 hs</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Anisacate+Cordoba" target="_blank" class="button btn-sky is-small is-rounded">
+              <span class="icon"><i class="fas fa-location-dot"></i></span>
+              <span>Abrir en Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE PRENSA Y ENTREVISTAS -->
+  <section class="section" id="prensa">
+    <div class="container">
+      <div class="has-text-centered mb-6">
+        <h2 class="title is-2 text-brand-blue">Entrevistas y Medios</h2>
+        <p class="subtitle is-5 has-text-grey">Conoce más sobre nuestro proyecto en las noticias y redes</p>
+      </div>
+
+      <div class="columns is-multiline">
+        <!-- Revista Digital -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="icon is-large text-brand-orange"><i class="fas fa-book-open fa-3x"></i></span>
+            <h3 class="title is-5 text-brand-blue mt-3">Revista Digital (Pág. 31-34)</h3>
+            <p class="is-size-7 mb-4">Nota especial sobre el Laboratorio de Robótica.</p>
+            <a href="https://cloud.undernet.uy/s/jpEBxtWT8fTZtLk?dir=/&editing=false&openfile=true" target="_blank" class="button btn-orange is-fullwidth is-rounded">
+              <span class="icon"><i class="fas fa-external-link-alt"></i></span>
+              <span>Leer Revista</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- YouTube -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="icon is-large text-brand-orange"><i class="fab fa-youtube fa-3x"></i></span>
+            <h3 class="title is-5 text-brand-blue mt-3">Entrevista en YouTube</h3>
+            <p class="is-size-7 mb-4">Video presentación sobre nuestro trabajo en robótica.</p>
+            <a href="https://youtu.be/MMLrrJjNo5I?si=A-84OZa7XR-GnReu" target="_blank" class="button btn-orange is-fullwidth is-rounded">
+              <span class="icon"><i class="fab fa-youtube"></i></span>
+              <span>Ver Entrevista</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Radio Red Anisacate -->
+        <div class="column is-4">
+          <div class="box custom-card has-text-centered">
+            <span class="icon is-large text-brand-orange"><i class="fab fa-instagram fa-3x"></i></span>
+            <h3 class="title is-5 text-brand-blue mt-3">Radio @REDANISACATE</h3>
+            <p class="is-size-7 mb-4">Entrevista radial compartida en Instagram Reel.</p>
+            <a href="https://www.instagram.com/reel/DYOB6hKghOb/?igsi=OTR4ZmltbTdmY3Vp" target="_blank" class="button btn-orange is-fullwidth is-rounded">
+              <span class="icon"><i class="fab fa-instagram"></i></span>
+              <span>Ver Reel</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Radio Red Anisacate - Estudiantes -->
+        <div class="column is-6">
+          <div class="box custom-card has-text-centered">
+            <span class="icon is-large text-brand-blue"><i class="fas fa-user-graduate fa-3x"></i></span>
+            <h3 class="title is-5 text-brand-blue mt-3">Entrevista a Estudiantes</h3>
+            <p class="is-size-7 mb-4">Nuestros alumnos cuentan su experiencia con Cubito.</p>
+            <a href="https://www.instagram.com/reel/DYOH0XeAWjs/?igsi=anZyaWs5MnNheXNq" target="_blank" class="button btn-sky is-fullwidth is-rounded">
+              <span class="icon"><i class="fab fa-instagram"></i></span>
+              <span>Ver Nota a Estudiantes</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Extrusiones En Vivo -->
+        <div class="column is-6">
+          <div class="box custom-card has-text-centered">
+            <span class="icon is-large text-brand-blue"><i class="fas fa-tv fa-3x"></i></span>
+            <h3 class="title is-5 text-brand-blue mt-3">@extrusiones_envivo</h3>
+            <p class="is-size-7 mb-4">Cobertura en vivo y nota especial sobre robótica.</p>
+            <a href="https://www.instagram.com/reel/DXM6x5wEtdv/?igsi=MXc4NHdvM2ZucW00ag==" target="_blank" class="button btn-sky is-fullwidth is-rounded">
+              <span class="icon"><i class="fab fa-instagram"></i></span>
+              <span>Ver en Instagram</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- CALL TO ACTION / BANNER DE CONTACTO -->
   <section class="section bg-brand-blue has-text-white" id="contacto">
     <div class="container has-text-centered">
       <h2 class="title is-2 has-text-white">¿Listo para comenzar a crear?</h2>
       
-      <p class="subtitle is-4 has-text-white" >Te esperamos en nuestras sedes <br><i class="fa-solid fa-location-dot"></i> VALLE ANISACATE 
-       <i class="fa-solid fa-location-dot"></i> SANTA ROSA  <i class="fa-solid fa-location-dot"></i> VILLA GENERAL BELGRANO  <i class="fa-solid fa-location-dot"></i> VILLA BERNA  <i class="fa-solid fa-location-dot"></i> EMBALSE  <i class="fa-solid fa-location-dot"></i> ANISACATE</p>     
       <p class="subtitle is-4 has-text-light">Contáctanos directamente por WhatsApp o seguinos en Instagram para ver nuestras novedades.</p>
       
       <div class="buttons is-centered mt-5">
