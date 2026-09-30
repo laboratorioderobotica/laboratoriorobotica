@@ -96,3 +96,16 @@
     .fa-location-dot {
         color: rgb(255, 255, 255);
     }
+    /* Fuerza a que los contenedores de columna de Bulma tengan la misma altura */
+.columns.is-multiline {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Hace que la tarjeta ocupe el 100% de la altura de su columna y empuje el botón al fondo */
+.card-equal-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
